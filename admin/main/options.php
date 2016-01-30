@@ -315,7 +315,7 @@
 		$thinkup_section_field         = 'section';
 
 	}
-	
+
 
 	// -----------------------------------------------------------------------------------
 	//	1.	General Settings
@@ -332,13 +332,13 @@
 		'fields'     => array(
 
 			array(
-				'title'                      => __('Logo Settings', 'redux-framework'), 
+				'title'                      => __('Logo Settings', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('If you have an image logo you can upload it, otherwise you can display a text site title', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('If you have an image logo you can upload it, otherwise you can display a text site title', 'redux-framework'),
 				'id'                         => 'thinkup_general_logoswitch',
 				'type'                       => 'radio',
-				'options'                    => array( 
-					'option1' => 'Custom Image Logo', 
+				'options'                    => array(
+					'option1' => 'Custom Image Logo',
 					'option2' => 'Display Site Title',
 				),
 			),
@@ -350,10 +350,10 @@
 				'id'                         => 'thinkup_general_logolink',
 				'type'                       => 'media',
 				'url'                        => true,
-				'required'                   => array( 
-					array( 'thinkup_general_logoswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_general_logoswitch', '=',
 						array( 'option1' ),
-					), 
+					),
 				)
 			),
 
@@ -364,10 +364,10 @@
 				'id'                         => 'thinkup_general_logolinkretina',
 				'type'                       => 'media',
 				'url'                        => true,
-				'required'                   => array( 
-					array( 'thinkup_general_logoswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_general_logoswitch', '=',
 						array( 'option1' ),
-					), 
+					),
 				)
 			),
 
@@ -378,10 +378,10 @@
 				'id'                         => 'thinkup_general_sitetitle',
 				'type'                       => 'text',
 				'validate'                   => 'html',
-				'required'                   => array( 
-					array( 'thinkup_general_logoswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_general_logoswitch', '=',
 						array( 'option2' ),
-					), 
+					),
 				)
 			),
 
@@ -392,10 +392,10 @@
 				'id'                         => 'thinkup_general_sitedescription',
 				'type'                       => 'text',
 				'validate'                   => 'html',
-				'required'                   => array( 
-					array( 'thinkup_general_logoswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_general_logoswitch', '=',
 						array( 'option2' ),
-					), 
+					),
 				)
 			),
 
@@ -417,7 +417,7 @@
             ),
 
 			array(
-				'title'                      => __('Page Layout', 'redux-framework'), 
+				'title'                      => __('Page Layout', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Select page layout. This will only be applied to published Pages (I.e. Not posts, blog or home).', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Select page layout. This will only be applied to published Pages (I.e. Not posts, blog or home).', 'redux-framework'),
 				'id'                         => 'thinkup_general_layout',
@@ -432,21 +432,21 @@
 			),
 
 			array(
-				'title'                      => __('Select a Sidebar', 'redux-framework'), 
+				'title'                      => __('Select a Sidebar', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Choose a sidebar to use with the page layout.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Choose a sidebar to use with the page layout.', 'redux-framework'),
 				'id'                         => 'thinkup_general_sidebars',
 				'type'                       => 'select',
 				'data'                       => 'sidebars',
-				'required'                   => array( 
-					array( 'thinkup_general_layout', '=', 
+				'required'                   => array(
+					array( 'thinkup_general_layout', '=',
 						array( 'option2', 'option3' ),
-					), 
+					),
 				)
 			),
 
 			array(
-				'title'                      => __('Enable Fixed Layout', 'redux-framework'), 
+				'title'                      => __('Enable Fixed Layout', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Check to enable fixed layout.<br />(i.e. Disable responsive layout)', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Check to enable fixed layout.<br />(i.e. Disable responsive layout)', 'redux-framework'),
 				'id'                         => 'thinkup_general_fixedlayoutswitch',
@@ -454,7 +454,7 @@
 			),
 
 			array(
-				'title'                      => __('Enable Breadcrumbs', 'redux-framework'), 
+				'title'                      => __('Enable Breadcrumbs', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Switch on to enable breadcrumbs.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Switch on to enable breadcrumbs.', 'redux-framework'),
 				'id'                         => 'thinkup_general_breadcrumbswitch',
@@ -470,10 +470,10 @@
 				'id'                         => 'thinkup_general_breadcrumbdelimeter',
 				'type'                       => 'text',
 				'validate'                   => 'html',
-				'required'                   => array( 
-					array( 'thinkup_general_breadcrumbswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_general_breadcrumbswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -486,7 +486,7 @@
             ),
 
 			array(
-				'title'                      => __('Custom CSS', 'redux-framework'), 
+				'title'                      => __('Custom CSS', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Developers can use this to apply custom css. Use this to control, by styling of any element on the webpage by targeting id&#39;s and classes.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Developers can use this to apply custom css. Use this to control, by styling of any element on the webpage by targeting id&#39;s and classes.', 'redux-framework'),
 				'id'                         => 'thinkup_general_customcss',
@@ -505,7 +505,7 @@
 
 			// Ensures ThinkUpThemes custom code is output
 			array(
-				'title'    => __('Custom Code', 'redux-framework'), 
+				'title'    => __('Custom Code', 'redux-framework'),
 				'subtitle' => __('Custom Code', 'redux-framework'),
 				'id'       => 'thinkup_customization',
 				'type'     => 'thinkup_custom_code',
@@ -519,7 +519,7 @@
 
 
 	// -----------------------------------------------------------------------------------
-	//	2.1.	Home Settings				
+	//	2.1.	Home Settings
 	// -----------------------------------------------------------------------------------
 
 	Redux::setSection( $opt_name, array(
@@ -532,7 +532,7 @@
 		'fields'     => array(
 
 			array(
-				'title'                      => __('Homepage Layout', 'redux-framework'), 
+				'title'                      => __('Homepage Layout', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Select page layout. This will only be applied to the home page.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Select page layout. This will only be applied to the home page.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_layout',
@@ -547,16 +547,16 @@
 			),
 
 			array(
-				'title'                      => __('Select a Sidebar', 'redux-framework'), 
+				'title'                      => __('Select a Sidebar', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Choose a sidebar to use with the layout.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Choose a sidebar to use with the layout.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_sidebars',
 				'type'                       => 'select',
 				'data'                       => 'sidebars',
-				'required'                   => array( 
-					array( 'thinkup_homepage_layout', '=', 
+				'required'                   => array(
+					array( 'thinkup_homepage_layout', '=',
 						array( 'option2', 'option3' ),
-					), 
+					),
 				)
 			),
 
@@ -569,7 +569,7 @@
             ),
 
 			array(
-				'title'                      => __('Enable Homepage Slider', 'redux-framework'), 
+				'title'                      => __('Enable Homepage Slider', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Switch on to enable home page slider.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Switch on to enable home page slider.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_sliderswitch',
@@ -583,16 +583,16 @@
 			),
 
 			array(
-				'title'                                      => __('Homepage Slider Shortcode', 'redux-framework'), 
+				'title'                                      => __('Homepage Slider Shortcode', 'redux-framework'),
 				$thinkup_subtitle_panel                      => __('Input the shortcode of the slider you want to display. I.e. [shortcode_name].', 'redux-framework'),
 				$thinkup_subtitle_customizer                 => __('Input the shortcode of the slider you want to display. I.e. [shortcode_name].', 'redux-framework'),
 				'id'                                         => 'thinkup_homepage_slidername',
 				'type'                                       => 'text',
 				'validate'                                   => 'html',
-				'required'                                   => array( 
-					array( 'thinkup_homepage_sliderswitch', '=', 
+				'required'                                   => array(
+					array( 'thinkup_homepage_sliderswitch', '=',
 						array( 'option2' ),
-					), 
+					),
 				)
 			),
 
@@ -602,10 +602,10 @@
 				$thinkup_subtitle_customizer => __('Unlimited slides with drag and drop sortings.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_sliderpreset',
 				'type'                       => 'thinkup_slider_free',
-				'required'                   => array( 
-					array( 'thinkup_homepage_sliderswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_homepage_sliderswitch', '=',
 						array( 'option1' ),
-					), 
+					),
 				)
 			),
 
@@ -616,16 +616,16 @@
 				'id'                         => 'thinkup_homepage_sliderpresetwidth',
 				'type'                       => 'switch',
 				'default'                    => '1',
-				'required'                   => array( 
-					array( 'thinkup_homepage_sliderswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_homepage_sliderswitch', '=',
 						array( 'option1' ),
-					), 
+					),
 				)
 			),
 
 			array(
 				'id'                         => 'thinkup_homepage_sliderpresetheight',
-				'type'                       => 'slider', 
+				'type'                       => 'slider',
 				'title'                      => __('Slider Height (Max)', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Specify the maximum slider height (px).', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Specify the maximum slider height (px).', 'redux-framework'),
@@ -633,10 +633,10 @@
 				"min"                        => "200",
 				"step"                       => "5",
 				"max"                        => "500",
-				'required'                   => array( 
-					array( 'thinkup_homepage_sliderswitch', '=', 
+				'required'                   => array(
+					array( 'thinkup_homepage_sliderswitch', '=',
 						array( 'option1' ),
-					), 
+					),
 				)
 			),
 
@@ -646,10 +646,10 @@
                 'title'    => __( ' ', 'redux-framework' ),
                 'subtitle' => __( '<span class="redux-title">Call To Action - Intro</span>', 'redux-framework' ),
                 'indent'   => false,
-            ),		
+            ),
 
 			array(
-				'title'   => __('Message', 'redux-framework'), 
+				'title'   => __('Message', 'redux-framework'),
 				'desc'    => __('Check to enable intro on home page.', 'redux-framework'),
 				'id'      => 'thinkup_homepage_introswitch',
 				'type'    => 'checkbox',
@@ -673,21 +673,21 @@
 			),
 
 			array(
-				'title'                      => __('Button Text', 'redux-framework'), 
+				'title'                      => __('Button Text', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Input text to display on the action button.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Input text to display on the action button.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_introactionbutton',
 				'type'                       => 'text',
 				'validate'                   => 'html',
-			),				
+			),
 
 			array(
-				'title'                      => __('Link', 'redux-framework'), 
+				'title'                      => __('Link', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Specify whether the action button should link to a page on your site, out to external webpage or disable the link altogether.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Specify whether the action button should link to a page on your site, out to external webpage or disable the link altogether.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_introactionlink',
 				'type'                       => 'radio',
-				'options'                    => array( 
+				'options'                    => array(
 					'option1' => 'Link to a Page',
 					'option2' => 'Specify Custom link',
 					'option3' => 'Disable Link'
@@ -695,16 +695,16 @@
 			),
 
 			array(
-				'title'                      => __('Link to a page', 'redux-framework'), 
+				'title'                      => __('Link to a page', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Select a target page for action button link.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Select a target page for action button link.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_introactionpage',
 				'type'                       => 'select',
 				'data'                       => 'pages',
-				'required'                   => array( 
-					array( 'thinkup_homepage_introactionlink', '=', 
+				'required'                   => array(
+					array( 'thinkup_homepage_introactionlink', '=',
 						array( 'option1' ),
-					), 
+					),
 				)
 			),
 
@@ -715,10 +715,10 @@
 				'id'                         => 'thinkup_homepage_introactioncustom',
 				'type'                       => 'text',
 				'validate'                   => 'html',
-				'required'                   => array( 
-					array( 'thinkup_homepage_introactionlink', '=', 
+				'required'                   => array(
+					array( 'thinkup_homepage_introactionlink', '=',
 						array( 'option2' ),
-					), 
+					),
 				)
 			),
 		)
@@ -726,7 +726,7 @@
 
 
 	// -----------------------------------------------------------------------------------
-	//	2.2.	Home Content				
+	//	2.2.	Home Content
 	// -----------------------------------------------------------------------------------
 
 	Redux::setSection( $opt_name, array(
@@ -739,7 +739,7 @@
 		'fields'     => array(
 
 			array(
-				'title'                      => __('Enable Pre-Made Homepage ', 'redux-framework'), 
+				'title'                      => __('Enable Pre-Made Homepage ', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('switch on to enable pre-designed homepage layout.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('switch on to enable pre-designed homepage layout.', 'redux-framework'),
 				'id'                         => 'thinkup_homepage_sectionswitch',
@@ -753,10 +753,10 @@
 				'id'       => 'thinkup_homepage_section1_image',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -765,10 +765,10 @@
 				'desc'     => __('Add a title to the section.', 'redux-framework'),
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -777,22 +777,22 @@
 				'desc'     => __('Add some text to featured section 1.', 'redux-framework'),
 				'type'     => 'textarea',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			array(
 				'id'       => 'thinkup_homepage_section1_link',
-				'desc'     => __('Link to a page', 'redux-framework'), 
+				'desc'     => __('Link to a page', 'redux-framework'),
 				'type'     => 'select',
 				'data'     => 'pages',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -802,10 +802,10 @@
 				'id'       => 'thinkup_homepage_section2_image',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -814,10 +814,10 @@
 				'desc'     => __('Add a title to the section.', 'redux-framework'),
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -826,22 +826,22 @@
 				'desc'     => __('Add some text to featured section 2.', 'redux-framework'),
 				'type'     => 'textarea',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			array(
 				'id'       => 'thinkup_homepage_section2_link',
-				'desc'     => __('Link to a page', 'redux-framework'), 
+				'desc'     => __('Link to a page', 'redux-framework'),
 				'type'     => 'select',
 				'data'     => 'pages',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -851,10 +851,10 @@
 				'id'       => 'thinkup_homepage_section3_image',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -863,10 +863,10 @@
 				'desc'     => __('Add a title to the section.', 'redux-framework'),
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -875,22 +875,22 @@
 				'desc'     => __('Add some text to featured section 3.', 'redux-framework'),
 				'type'     => 'textarea',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			array(
 				'id'       => 'thinkup_homepage_section3_link',
-				'desc'     => __('Link to a page', 'redux-framework'), 
+				'desc'     => __('Link to a page', 'redux-framework'),
 				'type'     => 'select',
 				'data'     => 'pages',
-				'required' => array( 
-					array( 'thinkup_homepage_sectionswitch', '=', 
+				'required' => array(
+					array( 'thinkup_homepage_sectionswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 		)
@@ -911,16 +911,16 @@
 		'fields'     => array(
 
 			array(
-				'title'                      => __('Enable Search', 'redux-framework'), 
+				'title'                      => __('Enable Search', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Switch on to enable header search.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Switch on to enable header search.', 'redux-framework'),
 				'id'                         => 'thinkup_header_searchswitch',
 				'type'                       => 'switch',
 				'default'                    => '0',
 			),
-				
+
 			array(
-				'title'                      => __('Enable Social Media Links', 'redux-framework'), 
+				'title'                      => __('Enable Social Media Links', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Switch on to enable links to social media pages.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Switch on to enable links to social media pages.', 'redux-framework'),
 				'id'                         => 'thinkup_header_socialswitch',
@@ -934,10 +934,10 @@
                 'title'    => __( ' ', 'redux-framework' ),
                 'subtitle' => __( '<span class="redux-title">Social Media Content</span>', 'redux-framework' ),
                 'indent'   => false,
-            ),		
+            ),
 
 			array(
-				'title'                      => __('Display Message', 'redux-framework'), 
+				'title'                      => __('Display Message', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Add a message here. E.g. &#34;Follow Us&#34;.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Add a message here. E.g. &#34;Follow Us&#34;.', 'redux-framework'),
 				'id'                         => 'thinkup_header_socialmessage',
@@ -947,7 +947,7 @@
 
 			// Facebook social settings
 			array(
-				'title'                      => __('Facebook', 'redux-framework'), 
+				'title'                      => __('Facebook', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Enable link to Facebook profile.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Enable link to Facebook profile.', 'redux-framework'),
 				'id'                         => 'thinkup_header_facebookswitch',
@@ -960,10 +960,10 @@
 				'id'       => 'thinkup_header_facebooklink',
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_header_facebookswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_facebookswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -972,10 +972,10 @@
 				'id'       => 'thinkup_header_facebookiconswitch',
 				'type'     => 'checkbox',
 				'default'  => '0',
-				'required' => array( 
-					array( 'thinkup_header_facebookswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_facebookswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -984,16 +984,16 @@
 				'id'       => 'thinkup_header_facebookcustomicon',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_header_facebookswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_facebookswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			// Twitter social settings
 			array(
-				'title'                      => __('Twitter', 'redux-framework'), 
+				'title'                      => __('Twitter', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Enable link to Twitter profile.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Enable link to Twitter profile.', 'redux-framework'),
 				'id'                         => 'thinkup_header_twitterswitch',
@@ -1006,10 +1006,10 @@
 				'id'       => 'thinkup_header_twitterlink',
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_header_twitterswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_twitterswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1018,10 +1018,10 @@
 				'id'       => 'thinkup_header_twittericonswitch',
 				'type'     => 'checkbox',
 				'default'  => '0',
-				'required' => array( 
-					array( 'thinkup_header_twitterswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_twitterswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1030,32 +1030,32 @@
 				'id'       => 'thinkup_header_twittercustomicon',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_header_twitterswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_twitterswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			// Google+ social settings
 			array(
-				'title'                      => __('Google+', 'redux-framework'), 
+				'title'                      => __('Google+', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Enable link to Google+ profile.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Enable link to Google+ profile.', 'redux-framework'),
 				'id'                         => 'thinkup_header_googleswitch',
 				'type'                       => 'switch',
 				'default'                    => '0',
 			),
-				
+
 			array(
 				'desc'     => __('Input the url to your Google+ page. <strong>Note:</strong> Add http:// as the url is an external link.', 'redux-framework'),
 				'id'       => 'thinkup_header_googlelink',
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_header_googleswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_googleswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1064,10 +1064,10 @@
 				'id'       => 'thinkup_header_googleiconswitch',
 				'type'     => 'checkbox',
 				'default'  => '0',
-				'required' => array( 
-					array( 'thinkup_header_googleswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_googleswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1076,16 +1076,16 @@
 				'id'       => 'thinkup_header_googlecustomicon',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_header_googleswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_googleswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			// LinkedIn social settings
 			array(
-				'title'                      => __('LinkedIn', 'redux-framework'), 
+				'title'                      => __('LinkedIn', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Enable link to LinkedIn profile.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Enable link to LinkedIn profile.', 'redux-framework'),
 				'id'                         => 'thinkup_header_linkedinswitch',
@@ -1098,10 +1098,10 @@
 				'id'       => 'thinkup_header_linkedinlink',
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_header_linkedinswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_linkedinswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1110,10 +1110,10 @@
 				'id'       => 'thinkup_header_linkediniconswitch',
 				'type'     => 'checkbox',
 				'default'  => '0',
-				'required' => array( 
-					array( 'thinkup_header_linkedinswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_linkedinswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1122,16 +1122,16 @@
 				'id'       => 'thinkup_header_linkedincustomicon',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_header_linkedinswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_linkedinswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			// Flickr social settings
 			array(
-				'title'                      => __('Flickr', 'redux-framework'), 
+				'title'                      => __('Flickr', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Enable link to Flickr profile.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Enable link to Flickr profile.', 'redux-framework'),
 				'id'                         => 'thinkup_header_flickrswitch',
@@ -1144,10 +1144,10 @@
 				'id'       => 'thinkup_header_flickrlink',
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_header_flickrswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_flickrswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1156,10 +1156,10 @@
 				'id'       => 'thinkup_header_flickriconswitch',
 				'type'     => 'checkbox',
 				'default'  => '0',
-				'required' => array( 
-					array( 'thinkup_header_flickrswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_flickrswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1168,16 +1168,16 @@
 				'id'       => 'thinkup_header_flickrcustomicon',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_header_flickrswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_flickrswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			// YouTube social settings
 			array(
-				'title'                      => __('YouTube', 'redux-framework'), 
+				'title'                      => __('YouTube', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Enable link to YouTube profile.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Enable link to YouTube profile.', 'redux-framework'),
 				'id'                         => 'thinkup_header_youtubeswitch',
@@ -1190,22 +1190,22 @@
 				'id'       => 'thinkup_header_youtubelink',
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_header_youtubeswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_youtubeswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
-			),				
+			),
 
 			array(
 				'desc'     => __('Use Custom YouTube Icon', 'redux-framework'),
 				'id'       => 'thinkup_header_youtubeiconswitch',
 				'type'     => 'checkbox',
 				'default'  => '0',
-				'required' => array( 
-					array( 'thinkup_header_youtubeswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_youtubeswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1214,16 +1214,16 @@
 				'id'       => 'thinkup_header_youtubecustomicon',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_header_youtubeswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_youtubeswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
 			// RSS social settings
 			array(
-				'title'                      => __('RSS', 'redux-framework'), 
+				'title'                      => __('RSS', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Enable link to RSS profile.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Enable link to RSS profile.', 'redux-framework'),
 				'id'                         => 'thinkup_header_rssswitch',
@@ -1236,10 +1236,10 @@
 				'id'       => 'thinkup_header_rsslink',
 				'type'     => 'text',
 				'validate' => 'html',
-				'required' => array( 
-					array( 'thinkup_header_rssswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_rssswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1248,10 +1248,10 @@
 				'id'       => 'thinkup_header_rssiconswitch',
 				'type'     => 'checkbox',
 				'default'  => '0',
-				'required' => array( 
-					array( 'thinkup_header_rssswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_rssswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
 			),
 
@@ -1260,16 +1260,16 @@
 				'id'       => 'thinkup_header_rsscustomicon',
 				'type'     => 'media',
 				'url'      => true,
-				'required' => array( 
-					array( 'thinkup_header_rssswitch', '=', 
+				'required' => array(
+					array( 'thinkup_header_rssswitch', '=',
 						array( '1' ),
-					), 
+					),
 				)
-			),					
+			),
 		)
 	) );
-	
-	
+
+
 	// -----------------------------------------------------------------------------------
 	//	4.	Footer
 	// -----------------------------------------------------------------------------------
@@ -1284,7 +1284,7 @@
 		'fields'     => array(
 
 			array(
-				'title'                      => __('Footer Widgets Layout', 'redux-framework'), 
+				'title'                      => __('Footer Widgets Layout', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Select footer layout. Take complete control of the footer content by adding widgets.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Select footer layout. Take complete control of the footer content by adding widgets.', 'redux-framework'),
 				'id'                         => 'thinkup_footer_layout',
@@ -1314,7 +1314,7 @@
 			),
 
 			array(
-				'title'   => __('Disable Footer Widgets', 'redux-framework'), 
+				'title'   => __('Disable Footer Widgets', 'redux-framework'),
 				'desc'    => __('Check to disable footer widgets.', 'redux-framework'),
 				'id'      => 'thinkup_footer_widgetswitch',
 				'type'    => 'checkbox',
@@ -1338,7 +1338,7 @@
 		'fields'     => array(
 
 			array(
-				'title'                      => __('Blog Layout', 'redux-framework'), 
+				'title'                      => __('Blog Layout', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Select blog page layout. Only applied to the main blog page and not individual posts.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Select blog page layout. Only applied to the main blog page and not individual posts.', 'redux-framework'),
 				'id'                         => 'thinkup_blog_layout',
@@ -1352,26 +1352,26 @@
 			),
 
 			array(
-				'title'                      => __('Select a Sidebar', 'redux-framework'), 
+				'title'                      => __('Select a Sidebar', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('<strong>Note:</strong> Sidebars will not be applied to homepage Blog. Control sidebars on the homepage from the &#39;Home Settings&#39; option.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('<strong>Note:</strong> Sidebars will not be applied to homepage Blog. Control sidebars on the homepage from the &#39;Home Settings&#39; option.', 'redux-framework'),
 				'id'                         => 'thinkup_blog_sidebars',
 				'type'                       => 'select',
 				'data'                       => 'sidebars',
-				'required'                   => array( 
-					array( 'thinkup_blog_layout', '=', 
+				'required'                   => array(
+					array( 'thinkup_blog_layout', '=',
 						array( 'option2', 'option3' ),
-					), 
+					),
 				)
 			),
 
 			array(
-				'title'                      => __('Post Content', 'redux-framework'), 
+				'title'                      => __('Post Content', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Control how much content you want to show from each post on the main blog page. Remember to control the full article content by using the Wordpress <a href="http://en.support.wordpress.com/splitting-content/more-tag/">more</a> tag in your post.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Control how much content you want to show from each post on the main blog page. Remember to control the full article content by using the Wordpress <a href="http://en.support.wordpress.com/splitting-content/more-tag/">more</a> tag in your post.', 'redux-framework'),
 				'id'                         => 'thinkup_blog_postswitch',
 				'type'                       => 'radio',
-				'options'                    => array( 
+				'options'                    => array(
 					'option1' => 'Show excerpt',
 					'option2' => 'Show full article',
 					'option3' => 'Hide article',
@@ -1387,7 +1387,7 @@
             ),
 
 			array(
-				'title'                      => __('Post Layout', 'redux-framework'), 
+				'title'                      => __('Post Layout', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Select blog page layout. This will only be applied to individual posts and not the main blog page.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Select blog page layout. This will only be applied to individual posts and not the main blog page.', 'redux-framework'),
 				'id'                         => 'thinkup_post_layout',
@@ -1402,16 +1402,16 @@
 			),
 
 			array(
-				'title'                      => __('Select a Sidebar', 'redux-framework'), 
+				'title'                      => __('Select a Sidebar', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('Choose a sidebar to use with the layout.', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('Choose a sidebar to use with the layout.', 'redux-framework'),
 				'id'                         => 'thinkup_post_sidebars',
 				'type'                       => 'select',
 				'data'                       => 'sidebars',
-				'required'                   => array( 
-					array( 'thinkup_post_layout', '=', 
+				'required'                   => array(
+					array( 'thinkup_post_layout', '=',
 						array( 'option2', 'option3' ),
-					), 
+					),
 				)
 			),
 		)
@@ -1439,7 +1439,7 @@
 	// -----------------------------------------------------------------------------------
 	//	15.	Upgrade Now
 	// -----------------------------------------------------------------------------------
-
+/*
     Redux::setSection( $opt_name, array(
 		'title'      => __('Upgrade (10% off)', 'redux-framework'),
 		'desc'       => __('', 'redux-framework'),
@@ -1452,7 +1452,7 @@
 
 			// Ensures ThinkUpThemes upgrade code is output
 			array(
-				'title'                      => __('', 'redux-framework'), 
+				'title'                      => __('', 'redux-framework'),
 				$thinkup_subtitle_panel      => __('', 'redux-framework'),
 				$thinkup_subtitle_customizer => __('', 'redux-framework'),
 				'id'                         => 'thinkup_upgrade_content',
@@ -1461,6 +1461,7 @@
 			),
 		)
 	) );
+   */
 
     Redux::setSection( $opt_name, array(
 		'type' => 'divide',
@@ -1558,4 +1559,3 @@
             }
         }
     }
-

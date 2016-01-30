@@ -745,7 +745,8 @@ color: #FFF;
 }
 #header .header-links > ul > li a{
 	color: #777;
-	padding: 25px 20px;
+	padding: 18px 20px;
+	font-size:14px;
 }
 #header .header-links > ul > li.menu-parent > a:after {
 	position: relative;
@@ -804,7 +805,7 @@ color: #FFF;
 #header .menu > li.current_page_item > a,
 #header .menu > li.current-menu-ancestor > a,
 #header .menu > li > a:hover {
-	color: #F33F3F;
+	color: #23C613;
 }
 .main-navigation:after {
 	clear: both;
@@ -2865,4 +2866,8 @@ h4.project-title {
 #bookbutton > a:hover
 {
     color: #353535 ! important;
+}
+
+article{
+	font-size:14px;
 }
