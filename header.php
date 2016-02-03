@@ -15,6 +15,7 @@
 <meta name="viewport" content="width=device-width" />
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="shortcut icon" href="http://www.hahutravel.com/favicon.ico" type="image/x-icon" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/lib/scripts/html5.js" type="text/javascript"></script>
 <![endif]-->
@@ -35,7 +36,7 @@
 		<div id="pre-header">
 		<div class="wrap-safari">
 		<div id="pre-header-core" class="main-navigation">
-  
+
 			<?php if ( has_nav_menu( 'pre_header_menu' ) ) : ?>
 			<?php wp_nav_menu( array( 'container_class' => 'header-links', 'container_id' => 'pre-header-links-inner', 'theme_location' => 'pre_header_menu' ) ); ?>
 			<?php endif; ?>
